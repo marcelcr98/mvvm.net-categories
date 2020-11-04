@@ -51,10 +51,10 @@ namespace Semana_06.View
 
         private void dgvCategoria_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int idCategoria;
+            int ID;
             var item = (Categoria)dgvCategoria.SelectedItem;
             if (item == null) return;
-            idCategoria = Convert.ToInt32(item.IdCategoria);
+            ID = Convert.ToInt32(item.IdCategoria);
             View.ManCategoria window =  new View.ManCategoria();
             window.ShowDialog();
 

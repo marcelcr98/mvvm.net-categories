@@ -21,6 +21,7 @@ namespace Semana_06.View
     public partial class ManCategoria : Window
     {
         ManCategoriaViewModel viewModel;
+        public int ID { get; set; }
         public ManCategoria()
         {
             InitializeComponent();
